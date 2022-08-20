@@ -1,0 +1,33 @@
+.head{
+    display: flex;
+    padding: 25px 51px 26px 51px;
+    font-family: 'graphik';
+    flex-grow: 1;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+    > a{
+        padding-right: 21px;
+
+        &:hover{
+            text-shadow: 1px 1px 5px orange;
+        }
+    }
+}
+.header{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    list-style: none;
+
+    a{
+        font-size: 15px;
+        line-height: 20px;
+        color: #000;
+
+    }
+    li{
+        padding: 0 30px;
+    }
+}

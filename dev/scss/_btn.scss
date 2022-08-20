@@ -1,0 +1,36 @@
+.button-head{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.button-head > li:first-child{
+    padding: 0 11px;
+}
+.btn-one{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+    padding: 11px 35px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.btn-two{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    color: #FFFFFF;
+    padding: 11px 22px;
+    background: #FF6336;
+    border: 1px solid #FF6336;
+}
+.btn-one:hover{
+    background: #FF6336;
+    color: #FFFFFF;
+    transition: 0.8s;
+}
+.btn-two:hover{
+    background: #fff;
+    color: #FF6336;
+    transition: 0.8s;
+}
