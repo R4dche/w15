@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body id="body">
-    <header #="header">
+    <header id="header">
         <nav>
             <div class="head">
                 <a href="#"><img src="./images/head-logo.svg" alt="head-logo"></a>
-                <ul class="header">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Case studies</a></li>
-                    <li><a href="#">Resources</a></li>
-                </ul>
-                <ul class="button-head">
-                    <li><a class="btn-one" href="#">Log in</a></li>
-                    <li><a class="btn-two" href="#">Try it free</a></li>
-                </ul>
+                <input id="opener" type="checkbox">
+                <div class="label">
+                    <label for="opener" class="opener">
+                        <span>menu</span>
+                    </label>
+                </div>
+                <div class="menu-head">
+                    <ul class="header">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Case studies</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="btn-head">
+                    <ul class="button-head">
+                        <li><a class="btn-one" href="#">Log in</a></li>
+                        <li><a class="btn-two" href="#">Try it free</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -63,7 +74,7 @@
                     <div class="cards">
                         <div class="left-card">
                             <h3>Control the <br>localization process</h3>
-                            <p>Collaborate with your team in a  single workspace. <br> Add and assign tasks, track progress, and enjoy a <br> seamless localization workflow where you know <br> who is doing what and when.</p>
+                            <p>Collaborate with your team in a  single workspace. <br> Add and assign <a id="text-a" href="#">tasks</a>, track progress, and enjoy a <br> seamless localization workflow where you know <br> who is doing what and when.</p>
                             <a href="#">Start now</a>
                         </div>
                         <div class="right-card">
@@ -73,7 +84,7 @@
                     <div class="cards">
                         <div class="left-card">
                             <h3>Shorten time <br> to market</h3>
-                            <p>Localize your product in parallel with the development cycle. Use the Adobe XD, Figma,<br> and Sketch plugins to start working on <br>translations as soon as the product design is<br> ready. No more idle waiting.</p>
+                            <p>Localize your product in parallel with the development cycle. Use the <a id="text-a" href="#">Adobe XD</a>,<a id="text-a" href="#">Figma</a>,<br> and <a id="text-a" href="#">Sketch</a> plugins to start working on <br>translations as soon as the product design is<br> ready. No more idle waiting.</p>
                             <a href="#">Start now</a>
                         </div>
                         <div class="right-card">
@@ -83,7 +94,7 @@
                     <div class="cards">
                         <div class="left-card">
                             <h3>Ensure quality</h3>
-                            <p>Use built-in tools — e.g. translation memory, machine<br> translation, and QA checks — to enhance the quality<br> and cohesion of translations. Add product<br> screenshots for context and use the in-context editors <br>for instant previews.</p>
+                            <p>Use built-in tools — e.g. <a id="text-a" href="#">translation memory</a>, machine<br> translation, and <a id="text-a" href="#">QA checks</a> — to enhance the quality<br> and cohesion of translations. Add product<br> <a id="text-a" href="#">screenshots</a> for context and use the <a id="text-a" href="#">in-context editors</a><br>for instant previews.</p>
                             <a href="#">Start now</a>
                         </div>
                         <div class="right-card">
@@ -93,7 +104,7 @@
                     <div class="cards">
                         <div class="left-card">
                             <h3>Less work for<br> developers</h3>
-                            <p>Eliminate the hassle of localization and let developers<br> get back to their main tasks. Save hours with the powerful API, CLI, mobile SDKs, and integrations with  GitHub, Bitbucket, JIRA, and more.</p>
+                            <p>Eliminate the hassle of localization and let developers<br> get back to their main tasks. Save hours with the powerful <a id="text-a" href="#">API</a>,<a id="text-a" href="#">CLI</a>, <a id="text-a" href="#">mobile SDKs</a>, and integrations with  <a id="text-a" href="#">GitHub</a>,<a id="text-a" href="#">Bitbucket</a> , <a id="text-a" href="#">JIRA</a>, and more.</p>
                             <a href="#">Start now</a>
                         </div>
                         <div class="right-card">
@@ -117,7 +128,7 @@
                             <img src="images/mob-apps.svg" alt="mob-apps">
                             <div class="card-content">
                                 <h5>Mobile appss</h5>
-                                <p>Upload any mobile platform language files. Embed Lokalise iOS SDK or Lokalise Android SDK if you prefer. </p>
+                                <p>Upload any mobile platform language files. Embed <a id="text-b" href="#">Lokalise iOS SDK</a> or <a id="text-b" href="#">Lokalise Android SDK</a> if you prefer. </p>
                             </div>
                         </li>
                         <li class="card">
@@ -162,17 +173,17 @@
                             <div class="boost-content">
                                 <h6>Managers</h6>
                                 <p>Update existing and launch new features and products while simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.</p>
-                                <a href="#">Learn more</a>
+                                <a id="text-a" href="#">Learn more</a>
                             </div>
-                        </li>
+                        </li>   
                         <li>
                             <div class="img-boost">
                                 <img src="images/developers.svg" alt="developers">
                             </div>
                             <div class="boost-content">
                                 <h6>Developers</h6>
-                                <p>Set up an integration with your code repository or your own custom SDK via Lokalise's powerful API. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.</p>
-                                <a href="#">Learn more</a>
+                                <p>Set up an integration with your code repository or your own custom SDK via Lokalise's <a id="text-b" href="#">powerful API</a>. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.</p>
+                                <a id="text-a" href="#">Learn more</a>
                             </div>
                         </li>
                         <li>
@@ -182,7 +193,7 @@
                             <div class="boost-content">
                                 <h6>Translators</h6>
                                 <p>Eliminate double-work and neverending revisions with visual context (screenshots) and live previews. Improve the quality and speed of your translations with built-in CAT tools, like autocomplete, inline machine translation, and translation memory.</p>
-                                <a href="#">Learn more</a>
+                                <a id="text-a" href="#">Learn more</a>
                             </div>
                         </li>
                     </ul>
@@ -246,54 +257,111 @@
                         <p>Riding towards global success with a 100% teammate enthusiasm</p>
                         <a href="#">Read more</a>
                     </div>
-                    <div class="menu">
-                        <div class="menu-list">
-                            <h2>Product</h2>
-                            <ul>
-                                <li><a href="#">For developers</a></li>
-                                <li><a href="#">For managers</a></li>
-                                <li><a href="#">For translators</a></li>
-                                <li><a href="#">For designers</a></li>
-                                <li><a href="#">Integrations</a></li>
-                                <li><a href="#">Security</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Automations</a></li>
-                            </ul>
+                    <div class="swiper mySwiper">
+                        <div class="menu swiper-wrapper">
+                            <div class="menu-list swiper-slide">
+                                <h2>Product</h2>
+                                <ul>
+                                    <li><a href="#">For developers</a></li>
+                                    <li><a href="#">For managers</a></li>
+                                    <li><a href="#">For translators</a></li>
+                                    <li><a href="#">For designers</a></li>
+                                    <li><a href="#">Integrations</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Automations</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list swiper-slide">
+                                <h2>Support</h2>
+                                <ul>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Status</a></li>
+                                    <li><a href="#">Product Updates</a></li>
+                                    <li><a href="#">CLI Tool</a></li>
+                                    <li><a href="#">API Reference</a></li>
+                                    <li><a href="#">iOS and Android SDK</a></li>
+                                    <li><a href="#">Supported File Formats</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list swiper-slide">
+                                <h2>Company</h2>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Careers | We`re Hiring</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Media Kit</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list swiper-slide">
+                                <h2>Legal</h2>
+                                <ul>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookie Policy</a></li>
+                                    <li><a href="#">Privacy Shield</a></li>
+                                    <li><a href="#">DPA</a></li>
+                                    <li><a href="#">List of Sub-processors</a></li>
+                                    <li><a href="#">Candidates Privacy Notice</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="menu-list">
-                            <h2>Support</h2>
-                            <ul>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Documentation</a></li>
-                                <li><a href="#">Status</a></li>
-                                <li><a href="#">Product Updates</a></li>
-                                <li><a href="#">CLI Tool</a></li>
-                                <li><a href="#">API Reference</a></li>
-                                <li><a href="#">iOS and Android SDK</a></li>
-                                <li><a href="#">Supported File Formats</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-list">
-                            <h2>Company</h2>
-                            <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Careers | We`re Hiring</a></li>
-                                <li><a href="#">Case Studies</a></li>
-                                <li><a href="#">Media Kit</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-list">
-                            <h2>Legal</h2>
-                            <ul>
-                                <li><a href="#">Terms of Service</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Cookie Policy</a></li>
-                                <li><a href="#">Privacy Shield</a></li>
-                                <li><a href="#">DPA</a></li>
-                                <li><a href="#">List of Sub-processors</a></li>
-                                <li><a href="#">Candidates Privacy Notice</a></li>
-                            </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-menu">
+                        <div class="menu">
+                            <div class="menu-list">
+                                <h2>Product</h2>
+                                <ul>
+                                    <li><a href="#">For developers</a></li>
+                                    <li><a href="#">For managers</a></li>
+                                    <li><a href="#">For translators</a></li>
+                                    <li><a href="#">For designers</a></li>
+                                    <li><a href="#">Integrations</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Automations</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list">
+                                <h2>Support</h2>
+                                <ul>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Status</a></li>
+                                    <li><a href="#">Product Updates</a></li>
+                                    <li><a href="#">CLI Tool</a></li>
+                                    <li><a href="#">API Reference</a></li>
+                                    <li><a href="#">iOS and Android SDK</a></li>
+                                    <li><a href="#">Supported File Formats</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list">
+                                <h2>Company</h2>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Careers | We`re Hiring</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Media Kit</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-list">
+                                <h2>Legal</h2>
+                                <ul>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookie Policy</a></li>
+                                    <li><a href="#">Privacy Shield</a></li>
+                                    <li><a href="#">DPA</a></li>
+                                    <li><a href="#">List of Sub-processors</a></li>
+                                    <li><a href="#">Candidates Privacy Notice</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,5 +382,23 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

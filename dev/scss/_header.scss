@@ -5,9 +5,40 @@
     flex-grow: 1;
     align-items: center;
     border-bottom: 1px solid #ccc;
+    position: relative;
+
+    @media (max-width: 575px) {
+        flex-wrap: wrap;
+        padding: 25px 25px;
+    }
+    @media (max-width: 991px) {
+        justify-content: space-between;
+
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: #fff;
+        }
+    }
+
 
     > a{
+        position: relative;
         padding-right: 21px;
+        z-index: 999;
+
+        @media (max-width: 575px){
+            padding-right: 10px;
+            order: 0;
+            padding-bottom: 5px;
+        }
+        @media (max-width: 991px){
+            order: 0;
+        }
 
         &:hover{
             text-shadow: 1px 1px 5px orange;
@@ -15,11 +46,17 @@
     }
 }
 .header{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        list-style: none;
+
+        @media (max-width: 991px){
+            display: block;
+            text-align: center;
+            background: #fff;
+        }
 
     a{
         font-size: 15px;
@@ -28,6 +65,83 @@
 
     }
     li{
-        padding: 0 30px;
+        padding: 0 15px;
+
+        @media (min-width: 1200px){
+            padding: 0 30px;
+        }
+    }
+}
+.menu-head{
+    // display: none;
+    position: absolute;
+    left: 0;
+    top: -200%;
+    right: 0;
+    transition: top 0.8s;
+
+    @media (min-width: 992px) {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+    }
+}
+.label{
+    display: flex;
+    justify-content: end;
+
+    @media (max-width: 991px){
+        order: 2;
+    }
+}
+#opener{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+
+    &:checked{
+        ~ .menu-head{
+            // display: block;
+            top:100%
+        }
+    }
+}
+.opener{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    z-index: 999;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    &::before,
+    &::after,
+    span{
+        content: '';
+        display: block;
+        position: absolute;
+        font-size: 0;
+        line-height: 0;
+        height: 2px;
+        left: 5px;
+        right: 5px;
+        background: #000;
+    }
+
+    &::before{
+        top: 5px;
+    }
+    &::after{
+        top: 29px;
+    }
+    span{
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
