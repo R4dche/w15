@@ -73,7 +73,6 @@
     }
 }
 .menu-head{
-    // display: none;
     position: absolute;
     left: 0;
     top: -200%;
@@ -81,6 +80,7 @@
     transition: top 0.8s;
 
     @media (min-width: 992px) {
+        position: static;
         display: flex;
         margin: 0;
         padding: 0;
@@ -102,7 +102,7 @@
 
     &:checked{
         ~ .menu-head{
-            // display: block;
+            display: block;
             top:100%
         }
     }

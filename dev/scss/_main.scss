@@ -128,17 +128,23 @@
         }
     }
     .btn-two{
-        padding: 19px 42px;
+        padding: 15px 0px;
 
-        @media (max-width:575px){
+        @media (min-width:260px){
             padding: 19px 25px;
+        }
+        @media (min-width:768px){
+            padding: 19px 42px;
         }
     }
     .btn-one{
-        padding: 19px 28px;
+        padding: 15px 0px;
 
-        @media (max-width:575px){
+        @media (min-width:260px){
             padding: 19px 25px;
+        }
+        @media (min-width:768px){
+            padding: 19px 28px;
         }
     }
 }
@@ -322,7 +328,7 @@
 .apps{
     background: #FFF8E4;
     display: flex;
-    padding: 0 94px;
+    padding: 0 15px;
 
     h4{
         font-weight: 600;
@@ -375,6 +381,7 @@
 
         @media (max-width: 575px){
             display: block;
+            max-width: none;
         }
         @media (min-width: 576px){
         flex-basis: calc(100% / 2);
@@ -413,7 +420,6 @@
             @media (min-width: 576px){
                 font-size: 16px;
                 line-height: calc(25 / 18);
-                max-width: 266px;
             }
             @media (min-width: 768px){
                 font-size: 16px;
@@ -671,10 +677,14 @@
 
         .ck{
             max-width: 828px;
-            display: flex;
             flex-grow: 1;
-            align-self: center;
+            text-align: center;
 
+            @media (min-width: 400px){
+                margin: 0 0 10px 0;
+                display: flex;
+                align-self: center;
+            }
             @media (min-width: 768px){
                 margin: 0 0 10px 0;
             }
@@ -684,8 +694,9 @@
 
         }
         [alt="cake"]{
+            padding: 0;
 
-            @media (max-width: 575px){
+            @media (min-width: 400px){
                 width: 170px;
                 padding: 0 50px 0 0;
             }
@@ -1106,6 +1117,8 @@
     }
 }
 .swiper-menu{
+    display: none;
+
     @media (min-width:768px) {
         display: block;
     }
